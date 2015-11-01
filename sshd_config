@@ -16,7 +16,7 @@ PermitRootLogin no
 PubkeyAuthentication yes
 # The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2
 # but this is overridden so installations will only check .ssh/authorized_keys
-# AuthorizedKeysFile    .ssh/authorized_keys
+AuthorizedKeysFile    /usr/local/etc/ssh/authorized_keys/%u
 
 PasswordAuthentication no
 ChallengeResponseAuthentication no
