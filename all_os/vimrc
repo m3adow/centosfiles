@@ -1,0 +1,8 @@
+" This should be put in the correct place:
+" Individual: ~/.vimrc
+" CentOS: /etc/vimrc
+" *bian/*buntu: /etc/vim/vimrc
+
+se nu
+se ai
+se syn
