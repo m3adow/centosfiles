@@ -15,6 +15,7 @@ PermitRootLogin no
 StrictModes yes
 
 PubkeyAuthentication yes
+AuthorizedKeysFile /usr/local/etc/ssh/authorized_keys/%u
 
 IgnoreRhosts yes
 HostbasedAuthentication no
