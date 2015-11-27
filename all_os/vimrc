@@ -6,3 +6,5 @@
 se nu
 se ai
 syntax on
+se shiftwidth=2
+se tabstop=2
