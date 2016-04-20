@@ -8,3 +8,4 @@ se ai
 syntax on
 se shiftwidth=2
 se tabstop=2
+se expandtab
