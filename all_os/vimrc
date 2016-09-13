@@ -5,7 +5,7 @@
 
 se nu
 se ai
-syntax on
 se shiftwidth=2
 se tabstop=2
 se expandtab
+syntax on   " This command is not available in CoreOS.
