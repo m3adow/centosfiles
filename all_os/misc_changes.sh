@@ -4,4 +4,6 @@ set -u
 
 # This is most likely usable for all OS versions, although it's not always the best practice
 echo "export HISTTIMEFORMAT='%F %T '" >> /etc/profile
-echo "export HISTSIZE=5000" >> /etc/profile
+echo "export HISTSIZE=10000" >> /etc/profile
+echo "export HISTCONTROL='ignoredups'" >> /etc/profile
+echo "export HISTIGNORE='ls:ps'" >> /etc/profile
