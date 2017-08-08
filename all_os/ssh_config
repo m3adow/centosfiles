@@ -1,0 +1,11 @@
+###############
+# All
+###############
+Host *
+  IdentitiesOnly yes 
+  HashKnownHosts no
+  ServerAliveInterval 5
+  # SSH Multiplexing for all connections
+  ControlPath ~/.ssh/cm-%r@%h:%p
+  ControlMaster auto
+  ControlPersist 5m
