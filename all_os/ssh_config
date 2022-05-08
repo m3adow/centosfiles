@@ -1,11 +1,65 @@
-###############
-# All
-###############
-Host *
-  IdentitiesOnly yes 
-  HashKnownHosts no
+##################
+# Home Server
+##################
+Host ironman
+	User m3adow
+	ForwardAgent yes
+
+##################
+# Uberspace
+##################
+Host m3adow1
+	Hostname aegaeon.uberspace.de
+	User m3adow1
+
+##################
+# VCS
+##################
+Host bitbucket_m3adow bitbucket bitbucket.org
+	Hostname bitbucket.org
+	User git
+Host github.com github
+	Hostname github.com
+	User git
+	ForwardAgent no
+Host gitlab.com
+	User git
+	ForwardAgent no
+
+##################
+# AWS
+##################
+Host *.amazonaws.com
+  User ec2-user
+	ForwardAgent yes
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
   ServerAliveInterval 5
+
+##################
+# Scaleway
+##################
+Host *.cloud.scaleway.com
+  User root
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+  ServerAliveInterval 5
+
+##################
+# All
+##################
+Host *
+	IdentitiesOnly yes
+  HashKnownHosts no
+  ServerAliveInterval 300
+  ServerAliveCountMax 3
   # SSH Multiplexing for all connections
   ControlPath ~/.ssh/cm-%r@%h:%p
   ControlMaster auto
   ControlPersist 5m
+
+
+##################
+# Per Node config
+##################
+Include custom.conf
