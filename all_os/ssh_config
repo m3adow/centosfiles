@@ -49,7 +49,7 @@ Host *.cloud.scaleway.com
 # All
 ##################
 Host *
-	IdentitiesOnly yes
+  IdentitiesOnly yes
   HashKnownHosts no
   ServerAliveInterval 300
   ServerAliveCountMax 3
