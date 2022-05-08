@@ -2,36 +2,36 @@
 # Home Server
 ##################
 Host ironman
-	User m3adow
-	ForwardAgent yes
+  User m3adow
+  ForwardAgent yes
 
 ##################
 # Uberspace
 ##################
 Host m3adow1
-	Hostname aegaeon.uberspace.de
-	User m3adow1
+  Hostname aegaeon.uberspace.de
+  User m3adow1
 
 ##################
 # VCS
 ##################
 Host bitbucket_m3adow bitbucket bitbucket.org
-	Hostname bitbucket.org
-	User git
+  Hostname bitbucket.org
+  User git
 Host github.com github
-	Hostname github.com
-	User git
-	ForwardAgent no
+  Hostname github.com
+  User git
+  ForwardAgent no
 Host gitlab.com
-	User git
-	ForwardAgent no
+  User git
+  ForwardAgent no
 
 ##################
 # AWS
 ##################
 Host *.amazonaws.com
   User ec2-user
-	ForwardAgent yes
+  ForwardAgent yes
   StrictHostKeyChecking no
   UserKnownHostsFile /dev/null
   ServerAliveInterval 5
