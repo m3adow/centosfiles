@@ -8,4 +8,7 @@ se ai
 se shiftwidth=2
 se tabstop=2
 se expandtab
-syntax on   " This command is not available in CoreOS.
+syntax on
+
+" Change swap file dir
+se directory^=$HOME/tmp/.vim/swap//
